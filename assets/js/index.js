@@ -62,21 +62,22 @@ arr1.forEach((element)=>{
                     </div>`
     list.appendChild(ListItem)
 })
+
 //Menim yazdigim kod:
-// input.addEventListener('keydown',()=>{
-//     for(let i=0;i<arr1.length;i++){
-//         for(let j=1;j<Object.values(arr1[i]).length;j++){
-//             if(Object.values(arr1[i])[j].toLocaleLowerCase().search(input.value.toLocaleLowerCase())<0){
-//                 list.querySelectorAll('li')[i].style.display='none'
-//             }
-//             else{
-//                 list.querySelectorAll('li')[i].style.display='flex'
-//             }
-//             console.log(Object.values(arr1[i])[j].toLocaleLowerCase());
-//         }
-//         console.log("");
-//     }
-// })
+input.addEventListener('keydown',()=>{
+    for(let i=0;i<arr1.length;i++){
+        for(let j=1;j<Object.values(arr1[i]).length;j++){
+            if(Object.values(arr1[i])[j].toLocaleLowerCase().search(input.value.toLocaleLowerCase())<0){
+                list.querySelectorAll('li')[i].style.display='none'
+            }
+            else{
+                list.querySelectorAll('li')[i].style.display='flex'
+            }
+            console.log(Object.values(arr1[i])[j].toLocaleLowerCase());
+        }
+        console.log("");
+    }
+})
 
 //GPT nin yazdigi kod:
 // input.addEventListener('keydown', () => {
